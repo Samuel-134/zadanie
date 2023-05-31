@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 991px) {
+  .container {
+    padding: 0 !important;
+  }
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.heading-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.heading-con .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.heading-con .buttons .caret {
+  display: block !important;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  opacity: .3;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.heading-con .buttons .caret:hover {
+  opacity: 1;
+}
+
+.heading-con .buttons img {
+  width: 32px;
+}
+
+.heading-con .buttons .right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.heading-con .s-heading {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 991px) {
+  .heading-con .s-heading {
+    font-size: 1.7rem;
+  }
+}
+
+.heading-con .s-button {
+  color: #f37021;
+  background-color: #fff;
+  border: 2px solid #dce0e3;
+  border-radius: 10px;
+  padding: 5px 25px;
+  font-weight: bold;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.heading-con .s-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  background: #dce0e3;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.heading-con .s-button:hover::after {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.s-1 {
+  padding-top: 50px;
+}
+
+.articles .article {
+  margin-bottom: 30px;
+}
+
+.articles .img-con .article-img {
+  width: 100%;
+  height: 197px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .articles .img-con .article-img {
+    height: auto;
+  }
+}
+
+.articles .articles-text {
+  padding: 32px;
+  background-color: #f8f8fa;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.articles .articles-text .article-heading {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 16px;
+  color: #111221;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.articles .articles-text .date {
+  font-size: .875rem;
+  line-height: 1.3125rem;
+  font-weight: 400;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 16px;
+  color: #41464a;
+}
+
+.articles .articles-text .read-btn {
+  color: #f37021;
+  font-weight: bold;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  border-bottom: 1px solid #dce0e3;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.articles .articles-text .read-btn:hover {
+  color: #111221;
+}
+
+.s-1, .s-2, .s-3 {
+  padding-bottom: 50px;
+}
+
+.s-3 .slick-list {
+  overflow: visible !important;
+}
+
+.s-3 .progress-bar {
+  background-color: #dce0e3;
+  height: 3px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.s-3 .progress-bar .progress-fill {
+  height: 3px;
+  display: inline-block;
+  background-color: #111221;
+  width: 0;
+  position: absolute;
+  left: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body {
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=styles.css.map */
